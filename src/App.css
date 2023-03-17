@@ -104,6 +104,7 @@ section {
   text-decoration: none;
   color: white;
   font-weight: normal;
+  cursor: pointer;
 }
 
 .underDevelopment>p {

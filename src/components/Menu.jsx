@@ -1,11 +1,12 @@
 import React from 'react'
+import { Link, animateScroll as scroll } from 'react-scroll'
 
 const Menu = () => {
   return (
     <nav className='menuBar' >
-        <a href="#sobre-mi">Sobre mi</a>
-        <a href="#skills">Mis Conocimientos</a>
-        <a href="#contacto">Contacto</a>
+        <Link duration={500} smooth={true} to="sobre-mi">Sobre mi</Link>
+        <Link duration={500} smooth={true} to="skills">Mis Conocimintos</Link>
+        <Link duration={500} smooth={true} to="contacto">Contacto</Link>
     </nav>
   )
 }
