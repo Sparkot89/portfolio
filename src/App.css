@@ -1,59 +1,146 @@
+@import url('https://fonts.cdnfonts.com/css/poppins');
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
 .App {
   text-align: center;
+  background-image: url('../public/background.jpg');
+  background-position-x: 50%;
+  background-size: cover;
 }
 
-.App-logo {
-  height: 20vmin;
+.Dev-logo {
   pointer-events: none;
   border-radius: 50%;
+  height: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
+section {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-
   align-items: center;
   justify-content: center;
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: white;
 }
+
+
 
 .presentacion-CARD {
   display: flex;
   flex-direction: row;
-  min-height: 30vh;
+  min-height: 100vh;
+  width: 100%;
   align-items: center;
   justify-content: center;
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: white;
-  background-color: rgba(72, 220, 151, 0.362);
-  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
-    0 0 0 2px rgb(255, 255, 255),
-    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 }
 
 .presentacion-CARD>* {
   padding: 1rem;
-}
-
-.videoPlayer {
-  margin-top: 1rem;
+  text-align: left;
 }
 
 .presentacion {
   width: 30%;
   text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 18rem;
 }
 
-.buttonProjects {
-  margin-top: 1rem;
-  background-color: rgba(23, 161, 235, 0.362);
-  border: none;
-  font-size: 1rem;
+.description-CARD {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  width: 40%;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: white;
+ 
+}
+
+
+.description {
+  text-align: left;
+}
+
+
+.underDevelopment {
+  position: sticky;
   font-weight: bold;
-  width: 200px;
-  height: 3rem;
-  cursor: pointer;
+  top: 0px;
+  min-height: 4vh;
+  display: flex;
+  background-color: aliceblue;
+  align-items: center;
+  justify-content: center;
+}
+
+.underDevelopment>p {
+  margin: 0px;
+}
+
+.myName {
+  margin-bottom: 0px;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+.contactForm>* {
+  padding: 0.3rem;
+  text-align: left;
+  width: 100%;
+}
+
+.contactForm textarea {
+  resize: none;
+}
+
+.contactForm .send {
+  width: fit-content;
+  margin-top: 0.5rem;
+}
+
+.contact {
+  width: 25%;
+}
+
+.presentacion .textoAnimado {
+  font-size: 24px; 
+  /* border-right: 1rem solid white;  */
+  white-space: nowrap; 
+  overflow: hidden;
+
+}
+
+.presentacion .textoAnimado::after {
+  content: " ";
+  /* border-right: 1rem solid white; */
+  width: 1rem;
+  height: 1.3rem;
+  background-color: #fff;
+  display: inline-block;
+  animation:  blink 0.5s infinite;
+}
+
+@keyframes blink {
+  0%{
+    opacity: 0%;
+  }
+  100%{
+    opacity: 100%;
+  }
 }
