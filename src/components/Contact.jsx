@@ -18,7 +18,7 @@ const Contact = () => {
 
     return (
         <section>
-            <div data-aos="fade-up" className='contact'>
+            <div id="contacto" data-aos="fade-up" className='contact'>
                 <h3>Contacto</h3>
                 <form className='contactForm' onSubmit={send}>
                     <span >Nombre:</span>

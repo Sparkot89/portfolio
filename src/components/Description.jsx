@@ -2,7 +2,7 @@ import React from 'react'
 
 const Description = () => {
     return (
-        <section>
+        <section id="sobre-mi">
             <div data-aos="zoom-in" data-aos-duration="500" className="description-CARD reveal">
                 <div className='description'>
                     <h2>Sobre mi...</h2>

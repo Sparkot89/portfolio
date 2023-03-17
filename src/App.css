@@ -63,7 +63,6 @@ section {
   justify-content: center;
   font-size: 1.5rem;
   color: white;
- 
 }
 
 
@@ -71,6 +70,9 @@ section {
   text-align: left;
 }
 
+.description p {
+  font-weight: 200;
+}
 
 .underDevelopment {
   position: sticky;
@@ -82,6 +84,26 @@ section {
   align-items: center;
   justify-content: center;
   z-index: 100;
+}
+
+.menuBar {
+  position: sticky;
+  font-weight: bold;
+  top: 0px;
+  min-height: 4vh;
+  display: flex;
+  background-color: aliceblue;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  gap: 2rem;
+  background-color: #1e40ac;
+}
+
+.menuBar a {
+  text-decoration: none;
+  color: white;
+  font-weight: normal;
 }
 
 .underDevelopment>p {
@@ -120,9 +142,9 @@ section {
 }
 
 .presentacion .textoAnimado {
-  font-size: 24px; 
+  font-size: 24px;
   /* border-right: 1rem solid white;  */
-  white-space: nowrap; 
+  white-space: nowrap;
   overflow: hidden;
 
 }
@@ -134,11 +156,14 @@ section {
   height: 1.3rem;
   background-color: #fff;
   display: inline-block;
-  animation:  blink 0.5s infinite;
+  animation: blink 0.5s infinite;
 }
 
 .App-skills{
   width: 40%;
+}
+
+.skillsContent {
   display: grid;
   gap: 1rem;
   grid-auto-rows: 5rem;
@@ -147,15 +172,15 @@ section {
   justify-items: center;
 }
 
-.imgSkill{
+.imgSkill {
   width: 3rem;
 }
 
-.imgSkill > img{
+.imgSkill>img {
   height: 3rem;
 }
 
-.imgSkillContainer{
+.imgSkillContainer {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -164,19 +189,21 @@ section {
   text-align: center;
 }
 
-.imgSkillContainer .skillName{
+.imgSkillContainer .skillName {
   font-size: 1rem;
+  font-weight: 200;
 }
 
-.imgSkillContainer:last-child{
+.imgSkillContainer:last-child {
   grid-column: 2 / 3
 }
 
 @keyframes blink {
-  0%{
+  0% {
     opacity: 0%;
   }
-  100%{
+
+  100% {
     opacity: 100%;
   }
 }

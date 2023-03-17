@@ -7,6 +7,7 @@ import Skills from './components/Skills';
 import AOS from 'aos';
 import 'aos/dist/aos.css'
 import Contact from './components/Contact';
+import Menu from './components/Menu';
 function App() {
 
   useEffect(() => {
@@ -25,9 +26,10 @@ function App() {
   return (
     <div className="App">
       <UnderDevelopment />
+      <Menu />
       <PresentationCard />
-      <Description />
-      <Skills />
+      <Description/>
+      <Skills/>
       <Contact/>
     </div>
   );
