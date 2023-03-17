@@ -18,16 +18,16 @@ const Contact = () => {
 
     return (
         <section>
-            <div className='contact'>
-                <h3 data-aos="fade-down">Contacto</h3>
+            <div data-aos="fade-up" className='contact'>
+                <h3>Contacto</h3>
                 <form className='contactForm' onSubmit={send}>
-                    <span data-aos="fade-left">Nombre:</span>
-                    <input data-aos="fade-left" name='name'  type="text" onChange={(e) => setName(e.target.value)}/>
-                    <span data-aos="fade-right">Email:</span>
-                    <input data-aos="fade-right" name='mail'  type="text" onChange={(e) => setMail(e.target.value)}/> 
-                    <span data-aos="fade-left">Tu mensaje:</span>
-                    <textarea data-aos="fade-left" name='body'  rows="5" onChange={(e) => setBody(e.target.value)}/>
-                    <input data-aos="fade-up" className='send' value="Enviar" type="submit" />
+                    <span >Nombre:</span>
+                    <input  name='name'  type="text" onChange={(e) => setName(e.target.value)}/>
+                    <span >Email:</span>
+                    <input  name='mail'  type="text" onChange={(e) => setMail(e.target.value)}/> 
+                    <span>Tu mensaje:</span>
+                    <textarea name='body'  rows="5" onChange={(e) => setBody(e.target.value)}/>
+                    <input className='send' value="Enviar" type="submit" />
                 </form>
             </div>
         </section>

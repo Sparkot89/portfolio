@@ -27,8 +27,8 @@ function App() {
       <UnderDevelopment />
       <PresentationCard />
       <Description />
-      <Contact/>
       <Skills />
+      <Contact/>
     </div>
   );
 }
