@@ -46,7 +46,6 @@ section {
 }
 
 .presentacion {
-  width: 30%;
   text-align: left;
   display: flex;
   flex-direction: column;
