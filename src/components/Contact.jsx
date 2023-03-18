@@ -17,8 +17,8 @@ const Contact = () => {
     const [body, setBody] = useState("")
 
     return (
-        <section>
-            <div id="contacto" data-aos="fade-up" className='contact'>
+        <section id="contacto">
+            <div data-aos="fade-up" className='contact'>
                 <h3>Contacto</h3>
                 <form className='contactForm' onSubmit={send}>
                     <span >Nombre:</span>

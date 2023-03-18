@@ -104,6 +104,18 @@ section {
   color: white;
   font-weight: normal;
   cursor: pointer;
+  height: 4vh;
+  line-height: 4vh;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.menuBar a.active {
+  text-decoration: none;
+  color: black;
+  font-weight: normal;
+  cursor: pointer;
+  background-color: aliceblue;
 }
 
 .underDevelopment>p {
@@ -216,3 +228,4 @@ input, textarea{
 textarea::active {
   outline: 0px;
 }
+
