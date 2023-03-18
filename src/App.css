@@ -207,3 +207,12 @@ section {
     opacity: 100%;
   }
 }
+
+input, textarea{
+  border-radius: 5px;
+  border: 0px; 
+}
+
+textarea::active {
+  outline: 0px;
+}
