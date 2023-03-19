@@ -8,7 +8,7 @@ const PresentationCard = () => {
                 <img src="./dev.jpg" className="Dev-logo" alt="dev" />
                 <div className='presentacion'>
                     <h1>¡Hola! 👋</h1>
-                    <h2 className='myName'>Soy Alejandro Prieto</h2>
+                    <h2 className='myName'>¡Mi nombre es Alejandro!</h2>
                     <TextoAnimado text="Desarrollador Full-stack" />
                 </div>
             </div>
