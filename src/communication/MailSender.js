@@ -19,7 +19,7 @@ const sendMail = async (form) => {
         },
         headers: {
             accept: "application/json",
-            "api-key": `${process.env.REACT_APP_API_KEY}`,
+            "api-key": `${process.env.REACT_APP_API_KEY_PORTFOLIO}`,
             "content-type": "application/json"
         }
     };
