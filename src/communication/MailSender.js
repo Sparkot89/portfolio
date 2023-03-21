@@ -23,7 +23,6 @@ const sendMail = async (form) => {
             "content-type": "application/json"
         }
     };
-    debugger;
     const response = await axios.request(options)
 }
 
