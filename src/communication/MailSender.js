@@ -1,29 +1,21 @@
 import axios from "axios"
 const sendMail = async (form) => {
-    const options = {
-        method: 'POST',
-        url: 'https://api.sendinblue.com/v3/smtp/email',
-        data: {
-            sender: {
-                name: form.name,
-                email: "alexlokete@gmail.com",
-            },
-            to: [
-                {
-                    "email": "apriga89@gmail.com",
-                    "name": "Alejandro Prieto"
-                }
-            ],
-            subject: "Hello world",
-            htmlContent: "<p>hola</p>"
+    const url = 'https://server-portfolio-qaj4.onrender.com/email'
+    const data = {
+        sender: {
+            name: form.name,
+            email: form.email,
         },
-        headers: {
-            accept: "application/json",
-            "api-key": `${process.env.REACT_APP_API_KEY_PORTFOLIO}`,
-            "content-type": "application/json"
-        }
-    };
-    const response = await axios.request(options)
+        to: [
+            {
+                "email": "apriga89@gmail.com",
+                "name": "Alejandro Prieto"
+            }
+        ],
+        subject: "¡Nuevo mensaje portfolio!",
+        htmlContent: form.body
+    }
+    const response = await axios.post(url, data)
 }
 
 export default sendMail
