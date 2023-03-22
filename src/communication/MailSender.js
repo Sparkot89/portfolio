@@ -4,7 +4,7 @@ const sendMail = async (form) => {
     const data = {
         sender: {
             name: form.name,
-            email: form.email,
+            email: form.mail,
         },
         to: [
             {
